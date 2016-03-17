@@ -15,5 +15,6 @@ f _ = -1
 
 roots a b c =
   let det = sqrt (b*b - 4*a*c)
-  in  ((-b + det) / (2*a),
-       (-b - det) / (2*a))
+      twice_a = 2*a
+  in  ((-b + det) / twice_a,
+       (-b - det) / twice_a)
